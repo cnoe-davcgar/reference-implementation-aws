@@ -3,7 +3,7 @@
 
 # Details of your repository fork
 repo: 
-  url: "https://github.com/cnoe-punkwalker/reference-implementation-aws" # This is the GITHUB URL of the fork in Github Org that you have created.
+  url: "https://github.com/cnoe-davcgar/reference-implementation-aws" # This is the GITHUB URL of the fork in Github Org that you have created.
   revision: "HEAD" # Branch or Tag which should be used for Argo CD Apps
   basepath: "packages" # Directory in which configuration of addons is stored
 
@@ -16,10 +16,10 @@ auto_mode: "true"
 region: "us-west-2"
 
 # Base Domain name used for exposing services. It should be a subdomain or main domain of the Route53 hosted zone.
-domain: <REPLACE_ME_example.com>
+domain: cnoe.davcgar.people.aws.dev
 
 # Route53 hosted zone ID for configuring external-dns
-route53_hosted_zone_id: <REPLACE_ME_ZXYZZ1234ABCDEF5GHIJKL>
+route53_hosted_zone_id: Z06356072SSIGQH1D6W8M
 
 # Set this to "true" if you want to enable path routing othewise "false" for domain based routing.
 # When enabled, the exposed addons will be accessible at https://<domain_name>/<addon-name> 
@@ -29,7 +29,7 @@ path_routing: "true"
 
 # Tags for AWS resources
 tags:
-  githubRepo: "github.com/cnoe-io/reference-implementation-aws"
+  githubRepo: "github.com/cnoe-davcgar/reference-implementation-aws"
   env: "dev"
   project: "cnoe"
   

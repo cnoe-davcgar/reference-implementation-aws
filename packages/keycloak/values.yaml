@@ -5,6 +5,12 @@ proxyHeaders: "forwarded"
 
 global:
   defaultStorageClass: gp3
+  security:
+    allowInsecureImages: true
+
+image:
+  registry: docker.io
+  repository: bitnamilegacy/keycloak
 
 auth:
   adminUser: cnoe-admin
@@ -23,6 +29,9 @@ ingress:
 
 postgresql:
   enabled: true
+  image:
+    registry: docker.io
+    repository: bitnamilegacy/postgresql
   auth:
     username: keycloak
     database: keycloak
